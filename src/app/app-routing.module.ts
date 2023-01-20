@@ -6,7 +6,9 @@ import { CreateCourseComponent } from './create-course/create-course.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { TeacherListComponent } from './teacher-list/teacher-list.component';
+import { UpdateCourseComponent } from './update-course/update-course.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
+import { UpdateTeacherComponent } from './update-teacher/update-teacher.component';
 
 const routes: Routes = [
 
@@ -14,12 +16,16 @@ const routes: Routes = [
   {path:"",component:StudentListComponent,} , 
 
   { path:"create",component:CreateStudentComponent, },
-  { path:"update-student/:sId",component:UpdateStudentComponent, },
+  { path:"update-student/:sId",component:UpdateStudentComponent,},
 
   {path:'add',component:CreateCourseComponent},
   {path:'list',component:CourseListComponent},
+  {path:'update-course/:cid',component:UpdateCourseComponent},
+
+
   { path:"addt",component:AddTeacherComponent },
   {path:"listt",component:TeacherListComponent},
+  {path:'update-t/:tid',component:UpdateTeacherComponent}
 
 
 

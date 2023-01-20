@@ -1,1 +1,35 @@
-<p>update-teacher works!</p>
+<div class="container col-md-6">
+    <h3 style="color: red;">Add Teacher Form</h3>
+    <form class="container" (ngSubmit)="update()">
+      <div class="mb-3">
+            <label for="Tid">Teacher_id</label>
+            <input type="number" class="form-control" id="tId" name="tId" [(ngModel)]="teacher.tId">
+          </div>
+    
+          <div class="mb-3">
+            <label for="tName">Teacher_name</label>
+            <input type="text" class="form-control" id="tName" name="tName"[(ngModel)]="teacher.tName">
+          </div>
+    
+          <div class="mb-3">
+            <label for="tEmail">Teacher_Email</label>
+            <input type="email" class="form-control" id="tEmail" name="tEmail" [(ngModel)]="teacher.tEmail">
+          </div>
+    
+          <div class="mb-3">
+            <label for="tPhone">Teacher_Phone</label>
+            <input type="number" class="form-control" id="tPhone" name="tPhone" [(ngModel)]="teacher.tPhone">
+          </div>
+          
+           <div class="mb-3">
+            <label for="address">address</label>
+            <input type="text" class="form-control" id="address" name="address" [(ngModel)]="teacher.address">
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Submit</button>
+    
+        
+    </form>
+    
+    
+    </div>

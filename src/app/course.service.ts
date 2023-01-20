@@ -33,8 +33,7 @@ export class CourseService {
 
 
   updateCourse(course: Course): Observable<any> {
-    return this._http.post(this.baseUrl + '/', JSON.stringify(course))
-  }
+    return this._http.post(this.baseUrl + '/', course)}
 
 
   deleteCourse(cid:number){
