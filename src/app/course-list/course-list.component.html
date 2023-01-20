@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Course_Id</th>
+        <th scope="col">Course_Name</th>
+        <th scope="col">Course_Fees</th>
+        <th scope="col">Course_Duration</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let course of courses">
+        <th scope="row">{{course.cid}}</th>
+        <td>{{course.cName}}</td>
+        <td>{{course.fees}}</td>
+        <td>{{course.duration}}</td>
+        <td>
+            <button type="button" (click)="update(course.cid)" class="btn btn-primary">Update</button>&nbsp;
+            <button type="button" (click)="delete(course.cid)"  class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
